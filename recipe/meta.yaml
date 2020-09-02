@@ -1,5 +1,5 @@
 {% set name = "eth-utils" %}
-{% set version = "1.9.4" %}
+{% set version = "1.9.5" %}
 
 
 package:
@@ -8,11 +8,11 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 85f561096ebe34f18173e75f3062753a5a2464f7453df435a1ee846dfd58ce2e 
+  sha256: ac168aaa241fa0665e758b04009259d1b2b35daa0615fc563aad29f9ffc64d56
 
 build:
   number: 0
-  skip: true   # [py>=40 or py2k]
+  skip: true  # [py>=40 or py2k]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
