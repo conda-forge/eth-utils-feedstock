@@ -19,6 +19,7 @@ requirements:
   host:
     - pip
     - python
+    - setuptools
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
   run:
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
