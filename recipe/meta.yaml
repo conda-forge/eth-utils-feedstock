@@ -31,10 +31,6 @@ test:
   imports:
     - eth_utils
     - eth_utils.curried
-  commands:
-    - pip check
-  requires:
-    - pip
 
 about:
   home: https://github.com/ethereum/eth_utils
