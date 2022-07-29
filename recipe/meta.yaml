@@ -23,7 +23,7 @@ requirements:
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
   run:
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
-    - eth-hash <0.6.0,>=0.3.1
+    - eth-hash <4.0.0,>=0.3.1
     - eth-typing <4.0.0,>=3.0.0
     - python
     - toolz <1,>0.8.2  # [python_impl == 'pypy'] 
