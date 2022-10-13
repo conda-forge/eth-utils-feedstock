@@ -33,8 +33,8 @@ test:
   imports:
     - eth_utils
     - eth_utils.curried
-  commands:
-    - pip check
+#  commands:
+#    - pip check
   requires:
     - pip
 
