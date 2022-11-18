@@ -18,7 +18,7 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python
     - setuptools
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
   run:
