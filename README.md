@@ -1,11 +1,11 @@
-About eth-utils
-===============
+About eth-utils-feedstock
+=========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eth-utils-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/ethereum/eth_utils
 
 Package license: MIT
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/eth-utils-feedstock/blob/main/LICENSE.txt)
 
 Summary: Common utility functions for ethereum codebases.
 
