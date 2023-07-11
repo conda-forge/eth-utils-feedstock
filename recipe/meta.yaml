@@ -1,5 +1,5 @@
 {% set name = "eth-utils" %}
-{% set version = "2.1.1" %}
+{% set version = "2.2.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 7cccfb0b0749431d0d001e327e9a7289bf07308316a73850ae3895020e5682f4
+  sha256: 7f1a9e10400ee332432a778c321f446abaedb8f538df550e7c9964f446f7e265
 
 build:
   number: 0
@@ -25,12 +25,12 @@ requirements:
     - setuptools
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
   run:
-    - cytoolz >=0.10.1  # [python_impl == 'cpython']
+    - cached-property <2,>=1.5.2  # [py<3.8]
     - eth-hash >=0.3.1
     - eth-typing >=3.0.0
-    - python
     - toolz >0.8.2  # [python_impl == 'pypy']
-    - cached-property <2,>=1.5.2  # [py<3.8]
+    - cytoolz >=0.10.1  # [python_impl == 'cpython']
+    - python
     
 test:
   imports:
