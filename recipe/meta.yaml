@@ -25,12 +25,13 @@ requirements:
     - setuptools
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
   run:
-    - cytoolz >=0.10.1  # [python_impl == 'cpython']
+    - cached-property <2,>=1.5.2  # [py<3.8]
     - eth-hash >=0.3.1
     - eth-typing >=3.0.0
-    - python
     - toolz >0.8.2  # [python_impl == 'pypy']
-    - cached-property <2,>=1.5.2  # [py<3.8]
+    - cytoolz >=0.10.1  # [python_impl == 'cpython']
+    - python
+    
 test:
   imports:
     - eth_utils
