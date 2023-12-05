@@ -30,7 +30,7 @@ requirements:
     - eth-typing >=3.0.0
     - toolz >0.8.2  # [python_impl == 'pypy']
     - cytoolz >=0.10.1  # [python_impl == 'cpython']
-    - python >=3.7,4
+    - python
 
 test:
   imports:
