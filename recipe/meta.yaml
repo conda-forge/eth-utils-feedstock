@@ -12,7 +12,7 @@ source:
 
 build:
   number: 0
-  skip: false
+  skip: true  # [py<3.8]
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
@@ -21,7 +21,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - pip
-    - python >=3.8
+    - python 
     - setuptools
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
   run:
@@ -30,7 +30,7 @@ requirements:
     - eth-typing >=3.0.0
     - toolz >0.8.2  # [python_impl == 'pypy']
     - cytoolz >=0.10.1  # [python_impl == 'cpython']
-    - python >=3.8
+    - python
 
 test:
   imports:
