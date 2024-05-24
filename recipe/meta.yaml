@@ -1,5 +1,5 @@
 {% set name = "eth-utils" %}
-{% set version = "4.1.0" %}
+{% set version = "4.1.1" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: c170168198ddecac1ea911f74937e9364de81dbd03f42450fe40725c4d6e6220
+  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 71c8d10dec7494aeed20fa7a4d52ec2ce4a2e52fdce80aab4f5c3c19f3648b25
 
 build:
   number: 0
@@ -21,7 +21,7 @@ requirements:
     - cross-python_{{ target_platform }}     # [build_platform != target_platform]
   host:
     - pip
-    - python 
+    - python
     - setuptools
     - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
   run:
