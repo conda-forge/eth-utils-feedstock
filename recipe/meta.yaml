@@ -7,11 +7,11 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
   sha256: 84c6314b9cf1fcd526107464bbf487e3f87097a2e753360d5ed319f7d42e3f20
 
 build:
-  number: 0
+  number: 1
   skip: true  # [py<3.8]
   script: {{ PYTHON }} -m pip install . -vv
 
@@ -23,12 +23,10 @@ requirements:
     - pip
     - python
     - setuptools
-    - cytoolz <1.0.0,>=0.10.1  # [python_impl == 'cpython']
+    - cytoolz >=0.10.1  # [python_impl == 'cpython']
   run:
-    - cached-property <2,>=1.5.2  # [py<3.8]
     - eth-hash >=0.3.1
     - eth-typing >=5.0.0
-    - hexbytes >=1.0.0
     - toolz >0.8.2  # [python_impl == 'pypy']
     - cytoolz >=0.10.1  # [python_impl == 'cpython']
     - python
