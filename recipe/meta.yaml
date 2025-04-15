@@ -29,6 +29,7 @@ requirements:
     - eth-typing >=5.0.0
     - toolz >0.8.2  # [python_impl == 'pypy']
     - cytoolz >=0.10.1  # [python_impl == 'cpython']
+    - pydantic >=2.0.0,<3.0.0
     - python
 
 test:
