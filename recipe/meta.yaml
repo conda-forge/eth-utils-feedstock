@@ -1,5 +1,5 @@
 {% set name = "eth-utils" %}
-{% set version = "5.2.0" %}
+{% set version = "5.3.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 17e474eb654df6e18f20797b22c6caabb77415a996b3ba0f3cc8df3437463134
+  sha256: 1f096867ac6be895f456fa3acb26e9573ae66e753abad9208f316d24d6178156
 
 build:
   number: 0
@@ -29,6 +29,7 @@ requirements:
     - eth-typing >=5.0.0
     - toolz >0.8.2  # [python_impl == 'pypy']
     - cytoolz >=0.10.1  # [python_impl == 'cpython']
+    - pydantic >=2.0.0,<3.0.0
     - python
 
 test:
